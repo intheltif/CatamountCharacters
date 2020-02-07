@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wcu_purple_gold_gradient"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/title_text"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginTop="@dimen/subtitle_top_margin"
+        android:layout_marginBottom="@dimen/subtitle_bottom_margin"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/subtitle_text"
+        android:text="@string/subtitle_main_menu" />
+
+    <Button
+        android:id="@+id/oneCharBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/subtitleTextView"
+        android:text="One Character" />
+
+    <Button
+        android:id="@+id/twoCharBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/oneCharBtn"
+        android:onClick="buttonClicked"
+        android:text="Two Characters" />
+
+    <Button
+        android:id="@+id/imgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/twoCharBtn"
+        android:onClick="buttonClicked"
+        android:text="Image" />
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="buttonClicked"
+        android:text="Info" />
+</RelativeLayout>

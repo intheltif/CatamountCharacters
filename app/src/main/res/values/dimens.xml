@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text">40sp</dimen>
+    <dimen name="subtitle_text">26sp</dimen>
+    <dimen name="subtitle_top_margin">100dp</dimen>
+    <dimen name="subtitle_bottom_margin">20dp</dimen>
+    <dimen name="btnHeight">60dp</dimen>
+</resources>
