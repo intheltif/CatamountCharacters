@@ -9,8 +9,6 @@
     android:weightSum="7"
     tools:context=".AboutDeveloper">
 
-    <!-- TODO: paddingTop attributes may need be more dynamic -->
-
     <TextView
         android:id="@+id/text_about_dev_title"
         android:layout_width="match_parent"
