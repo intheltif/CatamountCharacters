@@ -14,16 +14,18 @@ public class DisplaySingleImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_single_image);
 
-        int img_id = -1;
-        String imgName = null;
+        String to_display = "";
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {
-            imgName = extras.getString("Image");
+            to_display = extras.getString("to_display");
+            if(to_display.equals("catamount")) {
+                to_display = "cat";
+            }
         }
 
-        img_id = this.getResources().getIdentifier(
-                imgName,
+        int img_id = this.getResources().getIdentifier(
+                to_display,
                 "drawable",
                 DisplaySingleImageActivity.this.getPackageName()
         );
