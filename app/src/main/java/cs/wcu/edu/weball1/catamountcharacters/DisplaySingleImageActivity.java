@@ -18,10 +18,8 @@ public class DisplaySingleImageActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {
+            // Get the extra
             to_display = extras.getString("to_display");
-            if(to_display.equals("catamount")) {
-                to_display = "cat";
-            }
         }
 
         int img_id = this.getResources().getIdentifier(

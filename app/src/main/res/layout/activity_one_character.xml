@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/wcu_purple_gold_gradient"
-tools:context=".TwoCharactersActivity">
+tools:context=".OneCharacterActivity">
 
     <TextView
         android:id="@+id/text_one_char_title"
@@ -28,17 +28,17 @@ tools:context=".TwoCharactersActivity">
         android:text="Enter an alpha numeric character" />
 
     <TextView
-        android:id="@+id/text_char"
+        android:id="@+id/text_one_char"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/edit_char"
+        android:layout_above="@id/edit_one_char"
         android:textAlignment="center"
         android:textSize="@dimen/subtitle_text"
         android:text="Enter Character" />
 
     <EditText
-        android:id="@+id/edit_char"
+        android:id="@+id/edit_one_char"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -51,11 +51,12 @@ tools:context=".TwoCharactersActivity">
         android:hint="Enter Character"/>
 
     <Button
-        android:id="@+id/btn_go"
+        android:id="@+id/btn_go_single"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_char"
-        android:textSize="@dimen/subtitle_text"
-        android:text="GO >" />
+        android:layout_below="@id/edit_one_char"
+        android:onClick="goBtnClicked"
+        android:text="GO >"
+        android:textSize="@dimen/subtitle_text" />
 
 </RelativeLayout>

@@ -40,7 +40,7 @@ public class SelectImageActivity extends AppCompatActivity {
         Intent singleImgActivity = new Intent(this, DisplaySingleImageActivity.class);
 
         if(view == btnCat) {
-            singleImgActivity.putExtra("to_display", this.btnCat.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display", "cat");
         } else if (view == btnTower) {
             singleImgActivity.putExtra("to_display", this.btnTower.getText().toString().toLowerCase());
         } else if (view == btnComp) {
