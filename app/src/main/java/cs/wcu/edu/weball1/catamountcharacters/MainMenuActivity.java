@@ -23,6 +23,16 @@ public class MainMenuActivity extends AppCompatActivity {
 
     private Button btnInfo;
 
+    /**
+     * Called when the activity is starting. All initialization is done within
+     * this method, as well as programmatically retrieving UI elements.
+     *
+     * @param savedInstanceState If the activity is being re-initialized after
+     *                           previously being shut down then this Bundle
+     *                           contains the data it most recently supplied in
+     *                           onSaveInstanceState(Bundle).
+     *                           This value may be null.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
