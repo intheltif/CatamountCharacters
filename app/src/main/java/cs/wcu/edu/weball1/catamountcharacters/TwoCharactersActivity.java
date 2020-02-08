@@ -59,7 +59,7 @@ public class TwoCharactersActivity extends AppCompatActivity {
         } // end if-else statement
 
         return valid;
-    }
+    } // end isValidInput method
 
 
 } // end TwoCharactersActivity class
