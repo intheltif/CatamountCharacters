@@ -39,16 +39,20 @@ public class MainMenuActivity extends AppCompatActivity {
 
     public void buttonClicked(View view) {
 
-        if(view == btnOneChar) {
-            //Do thing
-        } else if (view == btnTwoChars) {
-            //do thing
-        } else if (view == btnImg) {
-            //do thing
-        } else if (view == btnInfo) {
-            Intent info = new Intent(this, AboutDeveloperActivity.class);
-            startActivity(info);
-        } // end if statement
+        Intent nextActivity = null;
+
+        while(nextActivity == null) {
+            if (view == btnOneChar) {
+                nextActivity = new Intent(this, OneCharacterActivity.class);
+            } else if (view == btnTwoChars) {
+                nextActivity = new Intent(this, TwoCharactersActivity.class);
+            } else if (view == btnImg) {
+                nextActivity = new Intent(this, SelectImageActivity.class);
+            } else if (view == btnInfo) {
+                nextActivity = new Intent(this, AboutDeveloperActivity.class);
+            } // end if statement
+        }
+        startActivity(nextActivity);
 
     } // end buttonClicked method
 } // end MainMenuActivity activity

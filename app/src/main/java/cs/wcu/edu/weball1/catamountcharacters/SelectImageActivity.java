@@ -36,21 +36,26 @@ public class SelectImageActivity extends AppCompatActivity {
 
     public void buttonClicked(View view) {
 
-        Intent info = new Intent(this, AboutDeveloperActivity.class);
+        Intent singleImgActivity = new Intent(this, DisplaySingleImageActivity.class);
 
         if(view == btnCat) {
             // put extras
+            singleImgActivity.putExtra("Image", this.btnCat.getText().toString().toLowerCase());
         } else if (view == btnTower) {
             // put extras
+            singleImgActivity.putExtra("Image", this.btnTower.getText().toString().toLowerCase());
         } else if (view == btnComp) {
             // put extras
+            singleImgActivity.putExtra("Image", this.btnComp.getText().toString().toLowerCase());
         } else if (view == btnSci) {
             // put extras
+            singleImgActivity.putExtra("Image", this.btnSci.getText().toString().toLowerCase());
         } else if (view == btnYear) {
             // put extras
+            singleImgActivity.putExtra("Image", this.btnYear.getText().toString().toLowerCase());
         } // end if statement
 
-        startActivity(info);
+        startActivity(singleImgActivity);
 
     } // end buttonClicked method
 }

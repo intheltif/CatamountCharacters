@@ -4,5 +4,5 @@
     <dimen name="subtitle_text">26sp</dimen>
     <dimen name="subtitle_top_margin">75dp</dimen>
     <dimen name="subtitle_bottom_margin">20dp</dimen>
-    <dimen name="btnHeight">wrap_content</dimen>
+    <dimen name="btnHeight">20dp</dimen>
 </resources>

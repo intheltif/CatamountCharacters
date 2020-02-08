@@ -24,44 +24,48 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textSize="@dimen/subtitle_text"
+        android:onClick="buttonClicked"
+        android:text="@string/catamount"
         android:textColor="@color/wcu_gold"
-        android:text="@string/catamount" />
+        android:textSize="@dimen/subtitle_text" />
 
     <Button
         android:id="@+id/btn_tower"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textSize="@dimen/subtitle_text"
+        android:onClick="buttonClicked"
+        android:text="Tower"
         android:textColor="@color/wcu_gold"
-        android:text="Tower" />
+        android:textSize="@dimen/subtitle_text" />
 
     <Button
         android:id="@+id/btn_comp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textSize="@dimen/subtitle_text"
+        android:onClick="buttonClicked"
+        android:text="Computer"
         android:textColor="@color/wcu_gold"
-        android:text="Computer" />
+        android:textSize="@dimen/subtitle_text" />
 
     <Button
         android:id="@+id/btn_sci"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textSize="@dimen/subtitle_text"
+        android:onClick="buttonClicked"
+        android:text="Science"
         android:textColor="@color/wcu_gold"
-        android:text="Science" />
+        android:textSize="@dimen/subtitle_text" />
 
     <Button
         android:id="@+id/btn_year"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textSize="@dimen/subtitle_text"
+        android:text="@string/year"
         android:textColor="@color/wcu_gold"
-        android:text="@string/year" />
+        android:textSize="@dimen/subtitle_text" />
 
 </LinearLayout>
