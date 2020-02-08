@@ -4,6 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * Displays information about the developer of this application as well as
+ * citing licenses for fonts and other resources used with permission or under
+ * free-to-use licenses.
+ *
+ * @author Evert Ball
+ * @version 20 February 2020
+ *
+ */
 public class AboutDeveloperActivity extends AppCompatActivity {
 
     /**

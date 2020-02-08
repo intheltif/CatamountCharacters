@@ -15,12 +15,16 @@ import android.widget.Button;
  */
 public class MainMenuActivity extends AppCompatActivity {
 
+    /** Button that allows user to input a single character to display */
     private Button btnOneChar;
 
+    /** Button that allows user to input 2 characters to display */
     private Button btnTwoChars;
 
+    /** Button that takes user to image selection screen */
     private Button btnImg;
 
+    /** Button that takes user to the About Developer screen */
     private Button btnInfo;
 
     /**
@@ -65,4 +69,5 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(nextActivity);
 
     } // end buttonClicked method
+
 } // end MainMenuActivity activity

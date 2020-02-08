@@ -6,18 +6,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+/**
+ * Allows a user to select an image to be displayed from a set list of images.
+ *
+ * @author Evert Ball
+ * @version 20 February 2020
+ *
+ */
 public class SelectImageActivity extends AppCompatActivity {
 
+    /** Button that displays a Catamount */
     private Button btnCat;
 
+    /** Button that displays the alumni tower logo */
     private Button btnTower;
 
+    /** Button that displays the word 'computer' */
     private Button btnComp;
 
+    /** Button that displays the word 'science' */
     private Button btnSci;
 
+    /** Button that displays 'CS467 2020' */
     private Button btnYear;
 
     /**
@@ -42,12 +53,19 @@ public class SelectImageActivity extends AppCompatActivity {
         this.btnSci   = this.findViewById(R.id.btn_sci);
         this.btnYear  = this.findViewById(R.id.btn_year);
 
-    }
+    } // end onCreate method
 
-
+    /**
+     * Moves user to the DisplaySingleImageActivity based on the button that
+     * was pressed.
+     *
+     * @param view The view element that was selected (i.e the button pressed).
+     */
     public void buttonClicked(View view) {
 
         Intent singleImgActivity = new Intent(this, DisplaySingleImageActivity.class);
+
+        // TODO: Remove magic strings.
 
         if(view == btnCat) {
             singleImgActivity.putExtra("to_display", "cat");
@@ -64,4 +82,5 @@ public class SelectImageActivity extends AppCompatActivity {
         startActivity(singleImgActivity);
 
     } // end buttonClicked method
-}
+
+} // end SelectImageActivity class

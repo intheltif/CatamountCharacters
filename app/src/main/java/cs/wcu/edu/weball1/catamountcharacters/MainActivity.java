@@ -16,13 +16,15 @@ import android.os.Handler;
  */
 public class MainActivity extends AppCompatActivity {
 
-    /** Amount of time the Splash Screen should be delayed by */
+    /** Amount of time the Splash Screen should be displayed */
     private static final int PAUSE = 5000;
 
     /** Allows us to delay the screen for a set amount of time */
     private Runnable runner = new Runnable() {
         /**
-         * TODO: Finish documentation of this method
+         * TODO: Figure out exactly what having this Runnable object does.
+         * Multithreaded method that allows us to go to the Main Menu screen
+         * after a set delay.
          */
         @Override
         public void run() {
@@ -47,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * TODO: Finish documentation of this method
+     * Called after onCreate(Bundle) or after onRestart() when the activity has
+     * been stopped, but it is now again being displayed to the user. The use in
+     * this activity is that it allows us to delay the app by a set amount of
+     * time after onCreate(Bundle) has been called.
      */
     @Override
     protected void onStart() {
@@ -58,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * TODO: Finish documentation of this method
+     * Starts the next activity once this screen finishes displaying.
      */
     private void goToNextScreen() {
         Intent mainMenu = new Intent(this, MainMenuActivity.class);
