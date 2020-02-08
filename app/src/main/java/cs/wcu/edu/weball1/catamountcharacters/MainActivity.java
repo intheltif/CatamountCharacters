@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int PAUSE = 5000;
 
     /** Allows us to delay the screen for a set amount of time */
-    private final Runnable runner = new Runnable() {
+    private Runnable runner = new Runnable() {
         /**
          * TODO: Finish documentation of this method
          */

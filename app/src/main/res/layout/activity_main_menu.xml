@@ -28,7 +28,7 @@
         android:text="@string/subtitle_main_menu" />
 
     <Button
-        android:id="@+id/oneCharBtn"
+        android:id="@+id/oneCharacterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_below="@+id/oneCharBtn"
+        android:layout_below="@+id/oneCharacterBtn"
         android:onClick="buttonClicked"
         android:text="Two Characters" />
 

@@ -15,19 +15,27 @@ import android.widget.Button;
  */
 public class MainMenu extends AppCompatActivity {
 
-    private final Button btnOneChar = this.findViewById(R.id.oneCharBtn);
+    private Button btnOneChar;
 
-    private final Button btnTwoChars = this.findViewById(R.id.twoCharBtn);
+    private Button btnTwoChars;
 
-    private final Button btnImg = this.findViewById(R.id.imgBtn);
+    private Button btnImg;
 
-    private final Button btnInfo = this.findViewById(R.id.infoBtn);
+    private Button btnInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-    }
+
+        this.btnOneChar = this.findViewById(R.id.oneCharacterBtn);
+
+        this.btnTwoChars = this.findViewById(R.id.twoCharBtn);
+
+        this.btnImg = this.findViewById(R.id.imgBtn);
+
+        this.btnInfo = this.findViewById(R.id.infoBtn);
+    } // end onCreate activity
 
     public void buttonClicked(View view) {
 
@@ -40,6 +48,7 @@ public class MainMenu extends AppCompatActivity {
         } else if (view == btnInfo) {
             Intent info = new Intent(this, AboutDeveloper.class);
             startActivity(info);
-        }
-    }
-}
+        } // end if statement
+
+    } // end buttonClicked method
+} // end MainMenu activity
