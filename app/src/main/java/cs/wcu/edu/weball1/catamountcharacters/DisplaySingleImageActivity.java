@@ -25,7 +25,7 @@ public class DisplaySingleImageActivity extends AppCompatActivity {
         int img_id = this.getResources().getIdentifier(
                 to_display,
                 "drawable",
-                DisplaySingleImageActivity.this.getPackageName()
+                this.getPackageName()
         );
         Drawable imgToDisplay = this.getResources().getDrawable(img_id);
         ImageView singleImg = findViewById(R.id.img_single);

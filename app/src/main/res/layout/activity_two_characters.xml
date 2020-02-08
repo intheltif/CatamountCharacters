@@ -79,6 +79,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/edit_sec_char"
         android:textSize="@dimen/subtitle_text"
+        android:onClick="goClicked"
         android:text="GO >" />
 
 </RelativeLayout>
