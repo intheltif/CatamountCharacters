@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
     /** Amount of time the Splash Screen should be delayed by */
     private static final int PAUSE = 5000;
 
-    /** Handler that allows us to delay the screen for a set amount of time */
-    private Handler handler;
-
     /** Allows us to delay the screen for a set amount of time */
     private final Runnable runner = new Runnable() {
         /**
@@ -51,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        handler = new Handler();
+        Handler handler = new Handler();
         handler.postDelayed(runner, PAUSE);
     }
 
