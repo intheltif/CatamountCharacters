@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
      * TODO: Finish documentation of this method
      */
     private void goToNextScreen() {
-        Intent mainMenu = new Intent(this, MainMenu.class);
+        Intent mainMenu = new Intent(this, MainMenuActivity.class);
         this.startActivity(mainMenu);
     }
 }

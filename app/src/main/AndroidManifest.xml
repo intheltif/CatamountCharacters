@@ -11,8 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AboutDeveloper"></activity>
-        <activity android:name=".MainMenu" /> <!-- Attribute above ignores the warning about this app not being indexable by Google -->
+        <activity android:name=".DisplayDoubleImageActivity"></activity>
+        <activity android:name=".DisplaySingleImageActivity" />
+        <activity android:name=".SelectImageActivity" />
+        <activity android:name=".OneCharacterActivity" />
+        <activity android:name=".TwoCharactersActivity" />
+        <activity android:name=".AboutDeveloperActivity" />
+        <activity android:name=".MainMenuActivity" /> <!-- Attribute above ignores the warning about this app not being indexable by Google -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

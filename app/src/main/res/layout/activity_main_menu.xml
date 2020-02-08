@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wcu_purple_gold_gradient"
-    tools:context=".MainMenu">
+    tools:context=".MainMenuActivity">
 
     <TextView
         android:id="@+id/titleTextView"

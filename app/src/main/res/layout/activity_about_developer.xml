@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="7"
-    tools:context=".AboutDeveloper">
+    tools:context=".AboutDeveloperActivity">
 
     <TextView
         android:id="@+id/text_about_dev_title"

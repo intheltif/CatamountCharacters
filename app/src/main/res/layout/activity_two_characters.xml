@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wcu_purple_gold_gradient"
+    tools:context=".TwoCharactersActivity">
+
+    <TextView
+        android:id="@+id/text_one_char_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="@dimen/title_text"
+        android:text="Choose Two Characters" />
+
+    <TextView
+        android:id="@+id/text_one_char_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_one_char_title"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textSize="@dimen/subtitle_text"
+        android:text="Enter two alpha numeric characters" />
+
+    <TextView
+        android:id="@+id/text_first_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/edit_first_char"
+        android:textAlignment="center"
+        android:textSize="@dimen/subtitle_text"
+        android:text="First Character" />
+
+    <EditText
+        android:id="@+id/edit_first_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/text_sec_char"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:hint="Enter First Character"/>
+
+    <TextView
+        android:id="@+id/text_sec_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textSize="@dimen/subtitle_text"
+        android:text="Second Character" />
+
+    <EditText
+        android:id="@+id/edit_sec_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_sec_char"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:hint="Enter Second Character"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_sec_char"
+        android:textSize="@dimen/subtitle_text"
+        android:text="GO >" />
+
+</RelativeLayout>

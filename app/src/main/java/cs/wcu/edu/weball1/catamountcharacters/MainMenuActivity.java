@@ -13,7 +13,7 @@ import android.widget.Button;
  * @author Evert Ball
  * @version 20 February 2020
  */
-public class MainMenu extends AppCompatActivity {
+public class MainMenuActivity extends AppCompatActivity {
 
     private Button btnOneChar;
 
@@ -46,9 +46,9 @@ public class MainMenu extends AppCompatActivity {
         } else if (view == btnImg) {
             //do thing
         } else if (view == btnInfo) {
-            Intent info = new Intent(this, AboutDeveloper.class);
+            Intent info = new Intent(this, AboutDeveloperActivity.class);
             startActivity(info);
         } // end if statement
 
     } // end buttonClicked method
-} // end MainMenu activity
+} // end MainMenuActivity activity
