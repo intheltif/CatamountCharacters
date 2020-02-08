@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Catamount Characters</string>
     <string name="subtitle_main_menu">Main Menu</string>
+    <string name="title_info_screen">About Developer</string>
+    <string name="dev_name">Evert Ball</string>
+    <string name="dev_email">weball1@catamount.wcu.edu</string>
+    <string name="dev_site">LINK</string>
+    <string name="citations">Citations:</string>
 </resources>

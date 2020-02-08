@@ -16,7 +16,8 @@
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
         android:textSize="@dimen/title_text"
-        android:text="ABOUT DEVELOPER" />
+        android:textAllCaps="true"
+        android:text="@string/title_info_screen" />
 
     <ImageView
         android:id="@+id/img_my_photo"
@@ -32,7 +33,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Evert Ball" />
+        android:text="@string/dev_name" />
 
     <TextView
         android:id="@+id/text_email"
@@ -40,7 +41,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
-        android:text="weball1@catamount.wcu.edu" />
+        android:text="@string/dev_email" />
 
     <TextView
         android:id="@+id/text_website"
@@ -48,14 +49,16 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
-        android:text="LINK" />
+        android:text="@string/dev_site" />
 
+    <!-- TODO: Convert to popup that displays link and license info for fonts and etc -->
     <TextView
         android:id="@+id/text_citations"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Citations:" />
+        android:textAllCaps="true"
+        android:text="@string/citations" />
 
 </LinearLayout>
