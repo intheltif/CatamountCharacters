@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
         android:textSize="@dimen/title_text"
         android:text="@string/app_name" />
 
@@ -20,10 +21,8 @@
         android:id="@+id/subtitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titleTextView"
-        android:layout_marginTop="@dimen/subtitle_top_margin"
-        android:layout_marginBottom="@dimen/subtitle_bottom_margin"
         android:layout_centerHorizontal="true"
+        android:layout_above="@+id/oneCharacterBtn"
         android:textSize="@dimen/subtitle_text"
         android:text="@string/subtitle_main_menu" />
 
@@ -31,8 +30,7 @@
         android:id="@+id/oneCharacterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/subtitleTextView"
+        android:layout_above="@id/twoCharBtn"
         android:text="One Character" />
 
     <Button
@@ -40,7 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_below="@+id/oneCharacterBtn"
         android:onClick="buttonClicked"
         android:text="Two Characters" />
 
@@ -48,7 +45,6 @@
         android:id="@+id/imgBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_below="@+id/twoCharBtn"
         android:onClick="buttonClicked"
         android:text="Image" />
