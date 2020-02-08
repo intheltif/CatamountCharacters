@@ -7,8 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 
 /**
- * The main entry point into the application. This screen will act as a splash screen that pauses
- * for a set amount of time and displays the name of the application.
+ * The main entry point into the application. This screen will act as a splash
+ * screen that pauses for a set amount of time and displays the name of the
+ * application.
  *
  * @author Evert Ball
  * @version 20 February 2020
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     /** Handler that allows us to delay the screen for a set amount of time */
     private Handler handler;
 
-    /** The thread that allows us to delay the screen for a set amount of time */
+    /** Allows us to delay the screen for a set amount of time */
     private final Runnable runner = new Runnable() {
         /**
          * TODO: Finish documentation of this method
