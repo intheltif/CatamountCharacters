@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Collegiate">
+        <item name="fontFamily">@font/sf_collegiate</item>
+    </style>
+
+    <style name="Collegiate_Solid">
+        <item name="fontFamily">@font/sf_collegiate</item>
+    </style>
 </resources>

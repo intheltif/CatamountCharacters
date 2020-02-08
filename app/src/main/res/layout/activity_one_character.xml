@@ -8,6 +8,7 @@ android:background="@drawable/wcu_purple_gold_gradient"
 tools:context=".OneCharacterActivity">
 
     <TextView
+        style="@style/Collegiate"
         android:id="@+id/text_one_char_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +18,7 @@ tools:context=".OneCharacterActivity">
         android:text="Choose One Character" />
 
     <TextView
+        style="@style/Collegiate_Solid"
         android:id="@+id/text_one_char_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@ tools:context=".OneCharacterActivity">
         android:text="Enter an alpha numeric character" />
 
     <TextView
+        style="@style/Collegiate_Solid"
         android:id="@+id/text_one_char"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,12 +54,13 @@ tools:context=".OneCharacterActivity">
         android:hint="Enter Character"/>
 
     <Button
+        style="@style/Collegiate_Solid"
         android:id="@+id/btn_go_single"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit_one_char"
         android:onClick="goBtnClicked"
-        android:text="GO >"
+        android:text="GO"
         android:textSize="@dimen/subtitle_text" />
 
 </RelativeLayout>

@@ -12,22 +12,24 @@
     <!-- TODO: TextView text colors need swapped. Do not look good currently -->
 
     <TextView
+        style="@style/Collegiate"
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:gravity="center"
+        android:gravity="bottom|center_horizontal"
         android:layout_weight="1"
         android:textSize="50sp"
         android:textColor="@color/wcu_gold"
         android:text="@string/catamount" />
 
     <TextView
+        style="@style/Collegiate"
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:textSize="50sp"
-        android:textColor="@color/wcu_gold"
+        android:textColor="@color/wcu_purple"
         android:text="@string/characters" />
 </LinearLayout>
