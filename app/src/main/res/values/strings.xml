@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Catamount Characters</string>
+    <string name="catamount">Catamount</string>
+    <string name="characters">Characters</string>
     <string name="subtitle_main_menu">Main Menu</string>
     <string name="title_info_screen">About Developer</string>
     <string name="dev_name">Evert Ball</string>
