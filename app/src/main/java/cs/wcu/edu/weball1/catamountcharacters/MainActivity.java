@@ -3,8 +3,13 @@ package cs.wcu.edu.weball1.catamountcharacters;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextPaint;
+import android.widget.TextView;
 
 /**
  * The main entry point into the application. This screen will act as a splash

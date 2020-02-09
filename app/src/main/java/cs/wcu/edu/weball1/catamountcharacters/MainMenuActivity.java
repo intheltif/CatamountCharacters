@@ -55,17 +55,16 @@ public class MainMenuActivity extends AppCompatActivity {
 
         Intent nextActivity = null;
 
-        while(nextActivity == null) {
-            if (view == btnOneChar) {
-                nextActivity = new Intent(this, OneCharacterActivity.class);
-            } else if (view == btnTwoChars) {
-                nextActivity = new Intent(this, TwoCharactersActivity.class);
-            } else if (view == btnImg) {
-                nextActivity = new Intent(this, SelectImageActivity.class);
-            } else if (view == btnInfo) {
-                nextActivity = new Intent(this, AboutDeveloperActivity.class);
-            } // end if statement
-        }
+        if (view == btnOneChar) {
+            nextActivity = new Intent(this, OneCharacterActivity.class);
+        } else if (view == btnTwoChars) {
+            nextActivity = new Intent(this, TwoCharactersActivity.class);
+        } else if (view == btnImg) {
+            nextActivity = new Intent(this, SelectImageActivity.class);
+        } else if (view == btnInfo) {
+            nextActivity = new Intent(this, AboutDeveloperActivity.class);
+        } // end if statement
+
         startActivity(nextActivity);
 
     } // end buttonClicked method
