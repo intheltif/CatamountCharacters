@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wcu_purple_gold_gradient"
+    android:background="@color/wcu_purple"
     tools:context=".TwoCharactersActivity">
 
     <TextView
@@ -40,16 +40,17 @@
         android:textSize="@dimen/subtitle_text"
         android:text="First Character" />
 
+
     <EditText
         android:id="@+id/edit_first_char"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_above="@id/text_sec_char"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:maxLength="1"
         android:textAlignment="center"
         android:hint="Enter First Character"/>
 
@@ -70,10 +71,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/text_sec_char"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:maxLength="1"
         android:textAlignment="center"
         android:hint="Enter Second Character"/>
 

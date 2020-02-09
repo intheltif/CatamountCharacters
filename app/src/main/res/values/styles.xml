@@ -10,6 +10,7 @@
 
     <style name="Collegiate">
         <item name="fontFamily">@font/sf_collegiate</item>
+        <item name="android:textColor">@color/wcu_gold</item>
     </style>
 
     <style name="Collegiate_Solid">

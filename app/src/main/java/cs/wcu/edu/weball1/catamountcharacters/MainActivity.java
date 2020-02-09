@@ -22,7 +22,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     /** Amount of time the Splash Screen should be displayed */
-    private static final int PAUSE = 5000;
+    //TODO: Change back to 5000.
+    private static final int PAUSE = 1000;
 
     /** Allows us to delay the screen for a set amount of time */
     private Runnable runner = new Runnable() {
