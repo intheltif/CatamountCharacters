@@ -10,28 +10,26 @@
     <TextView
         style="@style/Collegiate"
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
         android:textColor="@color/wcu_gold"
-        android:textSize="@dimen/title_text"
-        android:text="@string/app_name" />
+        android:textSize="@dimen/title_text" />
+
 
     <TextView
         style="@style/Collegiate_Solid"
         android:id="@+id/subtitleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/oneCharacterBtn"
+        android:layout_above="@id/oneCharacterBtn"
+        android:text="@string/subtitle_main_menu"
+        android:textAlignment="center"
         android:textColor="@color/wcu_gold"
-        android:textSize="@dimen/subtitle_text"
-        android:text="@string/subtitle_main_menu" />
+        android:textSize="@dimen/subtitle_text" />
 
     <Button
-        style="@style/Collegiate_Solid"
         android:id="@+id/oneCharacterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,31 +38,29 @@
         android:text="One Character" />
 
     <Button
-        style="@style/Collegiate_Solid"
         android:id="@+id/twoCharBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:onClick="buttonClicked"
         android:text="Two Characters" />
 
     <Button
-        style="@style/Collegiate_Solid"
         android:id="@+id/imgBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/twoCharBtn"
+        android:layout_below="@id/twoCharBtn"
         android:onClick="buttonClicked"
         android:text="Image" />
 
     <Button
-        style="@style/Collegiate_Solid"
         android:id="@+id/infoBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:onClick="buttonClicked"
         android:text="Info" />
+
 </RelativeLayout>
