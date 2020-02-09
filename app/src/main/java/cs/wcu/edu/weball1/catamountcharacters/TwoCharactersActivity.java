@@ -115,7 +115,11 @@ public class TwoCharactersActivity extends AppCompatActivity {
         String alphanumeric = "\\d|\\w|\\s";
 
         // If non-alphanumeric input found, display a toast with an error msg
-        if(first.length() == 0) {
+        if(first.length() == 0 && second.length() == 0) {
+            Toast.makeText(getApplicationContext(),
+                    "No characters entered.",
+                    Toast.LENGTH_LONG).show();
+        } else if(first.length() == 0) {
             Toast.makeText(getApplicationContext(),
                     "Please enter a value for the first character.",
                     Toast.LENGTH_LONG).show();
