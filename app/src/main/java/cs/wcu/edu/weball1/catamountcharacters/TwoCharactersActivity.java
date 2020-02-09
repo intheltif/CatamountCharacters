@@ -60,9 +60,9 @@ public class TwoCharactersActivity extends AppCompatActivity {
 
         // Get the user supplied characters as Strings from their EditTexts
         String firstChar =
-                this.editFirstChar.getText().toString().toLowerCase().trim();
+                this.editFirstChar.getText().toString().toLowerCase();
         String secondChar =
-                this.editSecondChar.getText().toString().toLowerCase().trim();
+                this.editSecondChar.getText().toString().toLowerCase();
 
         // Validate input
         boolean validInput = isValidInput(firstChar, secondChar);
@@ -78,6 +78,14 @@ public class TwoCharactersActivity extends AppCompatActivity {
             firstChar = "num_" + firstChar;
         } else if(secondChar.matches("\\d+")) {
             secondChar = "num_" + secondChar;
+        }
+
+        if(firstChar.equals(" ")) {
+            firstChar = "space";
+        }
+
+        if(secondChar.equals(" ")) {
+            secondChar = "space";
         }
 
         // If all input was valid, move to display screen.
@@ -104,7 +112,7 @@ public class TwoCharactersActivity extends AppCompatActivity {
 
         // TODO: Remove magic strings and make regex a constant
         boolean valid = false;
-        String alphanumeric = "\\d|\\w";
+        String alphanumeric = "\\d|\\w|\\s";
 
         // If non-alphanumeric input found, display a toast with an error msg
         if(first.length() == 0) {

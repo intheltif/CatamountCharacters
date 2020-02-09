@@ -47,11 +47,13 @@ public class OneCharacterActivity extends AppCompatActivity {
      */
     public void goBtnClicked(View view) {
 
-        String character = this.editOneChar.getText().toString().toLowerCase().trim();
+        String character = this.editOneChar.getText().toString().toLowerCase();
         boolean valid = isValidInput(character);
 
         if(character.matches("\\d")) {
             character = "num_" + character;
+        } else if(character.equals(" ")) {
+            character = "space";
         }
 
         if(valid) {
@@ -71,9 +73,12 @@ public class OneCharacterActivity extends AppCompatActivity {
     private boolean isValidInput(String input) {
 
         boolean valid = false;
-        String alphanumeric = "\\d|\\w";
-
-        if(!input.matches(alphanumeric)) {
+        String alphanumeric = "\\d|\\w|\\s";
+        if(input.length() == 0) {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter a character.",
+                    Toast.LENGTH_LONG).show();
+        } else if(!input.matches(alphanumeric)) {
             Toast.makeText(getApplicationContext(),
                     NON_ALPHANUMERIC_ERROR_MSG,
                     Toast.LENGTH_LONG).show();
