@@ -21,7 +21,7 @@ public class TwoCharactersActivity extends AppCompatActivity {
 
     /** Error message displayed when the user does not enter correct input */
     private static final String NON_ALPHANUMERIC_ERROR_MSG =
-            "Only single alphanumeric characters allowed.";
+            "Only alphanumeric characters allowed.";
 
     /** The EditText that contains the first character to be displayed. */
     private EditText editFirstChar;
@@ -107,7 +107,15 @@ public class TwoCharactersActivity extends AppCompatActivity {
         String alphanumeric = "\\d|\\w";
 
         // If non-alphanumeric input found, display a toast with an error msg
-        if(!first.matches(alphanumeric) || !second.matches(alphanumeric)) {
+        if(first.length() == 0) {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter a value for the first character.",
+                    Toast.LENGTH_LONG).show();
+        } else if(second.length() == 0) {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter a value for the second character.",
+                    Toast.LENGTH_LONG).show();
+        } else if(!first.matches(alphanumeric) || !second.matches(alphanumeric)) {
             Toast.makeText(getApplicationContext(),
                     NON_ALPHANUMERIC_ERROR_MSG,
                     Toast.LENGTH_LONG).show();
