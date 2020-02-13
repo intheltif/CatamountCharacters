@@ -24,7 +24,6 @@ tools:context=".OneCharacterActivity">
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/text_one_char_title"
-        android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:textSize="@dimen/subtitle_text"
         android:text="Enter an alpha numeric character" />
