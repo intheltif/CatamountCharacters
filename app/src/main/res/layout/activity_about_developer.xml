@@ -30,7 +30,6 @@
         app:srcCompat="@drawable/cat" />
 
     <TextView
-        style="@style/Collegiate_Solid"
         android:id="@+id/text_name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -39,7 +38,6 @@
         android:text="@string/dev_name" />
 
     <TextView
-        style="@style/Collegiate_Solid"
         android:id="@+id/text_email"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -47,24 +45,17 @@
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/dev_email" />
 
-    <TextView
-        style="@style/Collegiate_Solid"
-        android:id="@+id/text_website"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/dev_site" />
+        android:layout_weight="1" />
 
-    <!-- TODO: Convert to popup that displays link and license info for fonts and etc -->
     <TextView
-        style="@style/Collegiate_Solid"
-        android:id="@+id/text_citations"
+        android:id="@+id/text_font_citation"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical"
-        android:textAllCaps="true"
-        android:text="@string/citations" />
+        android:text="Fonts used with permission under open license" />
 
 </LinearLayout>
