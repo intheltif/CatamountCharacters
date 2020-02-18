@@ -9,4 +9,9 @@
     <string name="dev_email">weball1@catamount.wcu.edu</string>
     <string name="dev_site">LINK</string>
     <string name="citations">Citations:</string>
+    <string name="one_char_title">Choose One Character</string>
+    <string name="enter_alpha_num">Enter an alpha numeric character</string>
+    <string name="enter_char">Enter Character</string>
+    <string name="edit_enter_char">Enter Character Here</string>
+    <string name="go">GO</string>
 </resources>
