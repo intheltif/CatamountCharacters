@@ -25,7 +25,7 @@ tools:context=".OneCharacterActivity">
         android:layout_below="@id/text_one_char_title"
         android:textAlignment="center"
         android:textSize="@dimen/subtitle_text"
-        android:text="@string/enter_alpha_num" />
+        android:text="@string/one_char_subtitle" />
 
     <TextView
         android:id="@+id/text_one_char"

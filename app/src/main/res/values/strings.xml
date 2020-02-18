@@ -10,8 +10,12 @@
     <string name="dev_site">LINK</string>
     <string name="citations">Citations:</string>
     <string name="one_char_title">Choose One Character</string>
-    <string name="enter_alpha_num">Enter an alpha numeric character</string>
+    <string name="one_char_subtitle">Enter an alpha numeric character</string>
     <string name="enter_char">Enter Character</string>
     <string name="edit_enter_char">Enter Character Here</string>
+    <string name="two_char_title">Choose Two Characters</string>
+    <string name="two_char_subtitle">Enter two alpha numeric characters</string>
+    <string name="first_char">First Character</string>
+    <string name="sec_char">Second Character</string>
     <string name="go">GO</string>
 </resources>
