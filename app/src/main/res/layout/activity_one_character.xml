@@ -36,6 +36,7 @@ tools:context=".OneCharacterActivity">
         android:layout_centerHorizontal="true"
         android:layout_above="@id/edit_one_char"
         android:textAlignment="center"
+        android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text"
         android:text="Enter Character" />
 
