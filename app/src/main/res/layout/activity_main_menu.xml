@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/twoCharBtn"
         android:onClick="buttonClicked"
-        android:text="One Character" />
+        android:text="@string/one_char_btn" />
 
     <Button
         android:id="@+id/twoCharBtn"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:onClick="buttonClicked"
-        android:text="Two Characters" />
+        android:text="@string/two_char_btn" />
 
     <Button
         android:id="@+id/imgBtn"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/twoCharBtn"
         android:onClick="buttonClicked"
-        android:text="Image" />
+        android:text="@string/img_btn" />
 
     <Button
         android:id="@+id/infoBtn"
@@ -61,6 +61,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="buttonClicked"
-        android:text="Info" />
+        android:text="@string/info_btn" />
 
 </RelativeLayout>

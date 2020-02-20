@@ -15,10 +15,9 @@ tools:context=".OneCharacterActivity">
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:textSize="@dimen/title_text"
-        android:text="Choose One Character" />
+        android:text="@string/one_char_title" />
 
     <TextView
-        style="@style/Collegiate_Solid"
         android:id="@+id/text_one_char_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,10 +25,9 @@ tools:context=".OneCharacterActivity">
         android:layout_below="@id/text_one_char_title"
         android:textAlignment="center"
         android:textSize="@dimen/subtitle_text"
-        android:text="Enter an alpha numeric character" />
+        android:text="@string/one_char_subtitle" />
 
     <TextView
-        style="@style/Collegiate_Solid"
         android:id="@+id/text_one_char"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +36,7 @@ tools:context=".OneCharacterActivity">
         android:textAlignment="center"
         android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text"
-        android:text="Enter Character" />
+        android:text="@string/enter_char" />
 
     <EditText
         android:id="@+id/edit_one_char"
@@ -55,16 +53,16 @@ tools:context=".OneCharacterActivity">
         android:maxLines="1"
         android:maxLength="1"
         android:textAlignment="center"
-        android:hint="Enter Character"/>
+        android:hint="@string/edit_enter_char"/>
 
     <Button
-        style="@style/Collegiate_Solid"
+        style="@style/Collegiate"
         android:id="@+id/btn_go_single"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit_one_char"
         android:onClick="goBtnClicked"
-        android:text="GO"
+        android:text="@string/go"
         android:textSize="@dimen/subtitle_text" />
 
 </RelativeLayout>

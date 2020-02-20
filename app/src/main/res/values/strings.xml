@@ -2,6 +2,9 @@
     <string name="app_name">Catamount\nCharacters</string>
     <string name="catamount">Catamount</string>
     <string name="characters">Characters</string>
+    <string name="tower_btn">Tower</string>
+    <string name="comp_btn">Computer</string>
+    <string name="sci_btn">Science</string>
     <string name="year">2020</string>
     <string name="subtitle_main_menu">Main Menu</string>
     <string name="title_info_screen">About Developer</string>
@@ -9,4 +12,18 @@
     <string name="dev_email">weball1@catamount.wcu.edu</string>
     <string name="dev_site">LINK</string>
     <string name="citations">Citations:</string>
+    <string name="one_char_title">Choose One Character</string>
+    <string name="one_char_subtitle">Enter an alpha numeric character</string>
+    <string name="enter_char">Enter Character</string>
+    <string name="edit_enter_char">Enter Character Here</string>
+    <string name="two_char_title">Choose Two Characters</string>
+    <string name="two_char_subtitle">Enter two alpha numeric characters</string>
+    <string name="first_char">First Character</string>
+    <string name="sec_char">Second Character</string>
+    <string name="go">GO</string>
+    <string name="one_char_btn">One Character</string>
+    <string name="two_char_btn">Two Characters</string>
+    <string name="img_btn">Image</string>
+    <string name="info_btn">Info</string>
+    <string name="choose_img_title">Choose an Image</string>
 </resources>

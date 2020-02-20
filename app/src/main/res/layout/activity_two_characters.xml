@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:textSize="@dimen/title_text"
-        android:text="Choose Two Characters" />
+        android:text="@string/two_char_title" />
 
     <TextView
         style="@style/Collegiate_Solid"
@@ -26,7 +26,7 @@
         android:layout_below="@id/text_one_char_title"
         android:textAlignment="center"
         android:textSize="@dimen/subtitle_text"
-        android:text="Enter two alpha numeric characters" />
+        android:text="@string/two_char_subtitle" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:textAlignment="center"
             android:textSize="@dimen/subtitle_text"
             android:textColor="@color/wcu_gold"
-            android:text="First Character" />
+            android:text="@string/first_char" />
 
 
         <EditText
@@ -59,7 +59,7 @@
             android:maxLines="1"
             android:maxLength="1"
             android:textAlignment="center"
-            android:hint="Enter First Character"/>
+            android:hint="@string/edit_enter_char"/>
 
         <TextView
             style="@style/Collegiate_Solid"
@@ -70,7 +70,7 @@
             android:textAlignment="center"
             android:textColor="@color/wcu_gold"
             android:textSize="@dimen/subtitle_text"
-            android:text="Second Character" />
+            android:text="@string/sec_char" />
 
         <EditText
             android:id="@+id/edit_sec_char"
@@ -83,7 +83,7 @@
             android:maxLines="1"
             android:maxLength="1"
             android:textAlignment="center"
-            android:hint="Enter Second Character"/>
+            android:hint="@string/edit_enter_char"/>
 
     </LinearLayout>
 
@@ -95,6 +95,6 @@
         android:layout_alignParentBottom="true"
         android:textSize="@dimen/subtitle_text"
         android:onClick="goClicked"
-        android:text="GO" />
+        android:text="@string/go" />
 
 </RelativeLayout>

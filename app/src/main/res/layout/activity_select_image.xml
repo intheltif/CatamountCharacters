@@ -18,7 +18,7 @@
         android:textSize="@dimen/title_text"
         android:gravity="center"
         android:textColor="@color/wcu_purple"
-        android:text="Choose an Image" />
+        android:text="@string/choose_img_title" />
 
     <Button
         style="@style/Collegiate_Solid"
@@ -27,7 +27,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="buttonClicked"
-        android:text="Catamount"
+        android:text="@string/catamount"
         android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text" />
 
@@ -38,7 +38,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="buttonClicked"
-        android:text="Tower"
+        android:text="@string/tower_btn"
         android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text" />
 
@@ -49,7 +49,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="buttonClicked"
-        android:text="Computer"
+        android:text="@string/comp_btn"
         android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text" />
 
@@ -60,7 +60,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="buttonClicked"
-        android:text="Science"
+        android:text="@string/sci_btn"
         android:textColor="@color/wcu_gold"
         android:textSize="@dimen/subtitle_text" />
 
