@@ -63,20 +63,30 @@ public class SelectImageActivity extends AppCompatActivity {
      */
     public void buttonClicked(View view) {
 
-        Intent singleImgActivity = new Intent(this, DisplaySingleImageActivity.class);
-
-        // TODO: Remove magic strings.
+        Intent singleImgActivity = new Intent(this,
+                DisplaySingleImageActivity.class);
 
         if(view == btnCat) {
             singleImgActivity.putExtra("to_display", "cat");
+            singleImgActivity.putExtra("to_display_land", "cat_h");
         } else if (view == btnTower) {
-            singleImgActivity.putExtra("to_display", this.btnTower.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display",
+                    this.btnTower.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display_land",
+                    this.btnTower.getText().toString().toLowerCase() + "_h");
         } else if (view == btnComp) {
-            singleImgActivity.putExtra("to_display", this.btnComp.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display",
+                    this.btnComp.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display_land",
+                    this.btnComp.getText().toString().toLowerCase() + "_h");
         } else if (view == btnSci) {
-            singleImgActivity.putExtra("to_display", this.btnSci.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display",
+                    this.btnSci.getText().toString().toLowerCase());
+            singleImgActivity.putExtra("to_display_land",
+                    this.btnSci.getText().toString().toLowerCase() + "_h");
         } else if (view == btnYear) {
             singleImgActivity.putExtra("to_display", "cs467");
+            singleImgActivity.putExtra("to_display_land", "cs467_h");
         } // end if statement
 
         startActivity(singleImgActivity);

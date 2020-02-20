@@ -2,6 +2,7 @@ package cs.wcu.edu.weball1.catamountcharacters;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -33,15 +34,17 @@ public class DisplaySingleImageActivity extends AppCompatActivity {
 
         // Initialize variables and get Intent extras from calling activity
         String to_display = "";
+        int orientation = getResources().getConfiguration().orientation;
         Bundle extras = getIntent().getExtras();
-
-
-        // TODO: Remove magic strings.
 
         // Confirm extras are not null
         if (extras != null) {
             // Get the extras
-            to_display = extras.getString("to_display");
+            if(orientation == Configuration.ORIENTATION_PORTRAIT) {
+                to_display = extras.getString("to_display");
+            } else {
+                to_display = extras.getString("to_display_land");
+            }
         }
 
         // Find the resource id based on its filename

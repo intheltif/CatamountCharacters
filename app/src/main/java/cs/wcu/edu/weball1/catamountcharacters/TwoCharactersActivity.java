@@ -67,9 +67,6 @@ public class TwoCharactersActivity extends AppCompatActivity {
         // Validate input
         boolean validInput = isValidInput(firstChar, secondChar);
 
-
-        // TODO: Remove magic strings.
-
         // Prepend 'num_' to numeric characters so they can be found by filename
         if(firstChar.matches("\\d+") && secondChar.matches("\\d+")) {
             firstChar = "num_" + firstChar;
@@ -96,6 +93,10 @@ public class TwoCharactersActivity extends AppCompatActivity {
                     firstChar + "_bl");
             displayDoubleActivity.putExtra("to_display_second",
                     secondChar + "_bl");
+            displayDoubleActivity.putExtra("to_display_first_land",
+                    firstChar + "_sl");
+            displayDoubleActivity.putExtra("to_display_second_land",
+                    secondChar + "_sl");
             startActivity(displayDoubleActivity);
         } // end if statement
     } // end goClicked method
@@ -110,7 +111,6 @@ public class TwoCharactersActivity extends AppCompatActivity {
      */
     private boolean isValidInput(String first, String second) {
 
-        // TODO: Remove magic strings and make regex a constant
         boolean valid = false;
         String alphanumeric = "\\d|\\w|\\s";
 

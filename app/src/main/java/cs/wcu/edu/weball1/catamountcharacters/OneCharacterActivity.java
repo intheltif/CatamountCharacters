@@ -59,6 +59,7 @@ public class OneCharacterActivity extends AppCompatActivity {
         if(valid) {
             Intent displaySingleActivity = new Intent(this, DisplaySingleImageActivity.class);
             displaySingleActivity.putExtra("to_display", character + "_bl");
+            displaySingleActivity.putExtra("to_display_land", character + "_sl");
             startActivity(displaySingleActivity);
         } // end if statement
     } // end goBtnClicked method
