@@ -22,13 +22,11 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     /** Amount of time the Splash Screen should be displayed */
-    //TODO: Change back to 5000.
-    private static final int PAUSE = 1000;
+    private static final int PAUSE = 5000;
 
     /** Allows us to delay the screen for a set amount of time */
     private Runnable runner = new Runnable() {
         /**
-         * TODO: Figure out exactly what having this Runnable object does.
          * Multithreaded method that allows us to go to the Main Menu screen
          * after a set delay.
          */
